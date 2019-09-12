@@ -1,0 +1,30 @@
+div.container {
+  padding: 30px;
+  height: calc(100% - 64px);
+
+  mat-card {
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+
+    form {
+      mat-form-field {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    mat-progress-bar {
+      -webkit-transition: all 0.4s ease 0s;
+      -moz-transition: all 0.4s ease 0s;
+      //-ms-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+      opacity: 0;
+
+      &.visible { opacity: 1; }
+    }
+  }
+}
